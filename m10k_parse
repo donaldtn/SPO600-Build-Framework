@@ -1,0 +1,5 @@
+#!/bin/bash
+
+sed -e "s/^[^:]*://" -e "s/,/|/" monkeys10k.config
+
+

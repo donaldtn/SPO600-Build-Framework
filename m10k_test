@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Checking if the testing plugin exists" >&2
+
+#look for test plugin
+if [ ! -x "./m10k_test_plugin" ]
+then
+	echo "$0: test plugin '$(pwd)/m10k_test_plugin' not found" >&2
+	exit 2
+fi
+
+./m10k_test_plugin 
+

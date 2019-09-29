@@ -1,0 +1,10 @@
+#!/bin/bash
+#By Yehoshua Ghitis
+
+if [ ! -x ./m10k_build_plugin ]
+then
+    echo "$0: The plugin file 'm10k_build_plugin' is not found" >&2
+    exit 2
+fi
+./m10k_build_plugin
+
